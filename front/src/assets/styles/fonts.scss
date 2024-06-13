@@ -1,0 +1,9 @@
+$Outfit:("Regular",400 ), ("Medium", 500), ("SemiBold", 600);
+
+@each $name, $weight in $Outfit {
+    @font-face {
+        font-family: Outfit;
+        src: url('../fonts/Outfit-#{$name}.ttf');
+        font-weight: $weight;
+    }
+}
